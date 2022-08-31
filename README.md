@@ -4,7 +4,10 @@
 # unstruwwel <img src="man/figures/logo.png" align="right" width="120" />
 
 [![Lifecycle
-badge](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+badge](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html#maturing)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4451796.svg)](https://doi.org/10.5281/zenodo.4451796)
+[![CRAN
+badge](http://www.r-pkg.org/badges/version/unstruwwel)](https://cran.r-project.org/package=unstruwwel)
 [![Travis CI Build
 status](https://travis-ci.org/stefanieschneider/unstruwwel.svg?branch=master)](https://travis-ci.org/stefanieschneider/unstruwwel)
 [![AppVeyor Build
@@ -26,15 +29,22 @@ package is inspired by Heinrich Hoffmann’s rhymed story
 “[Struwwelpeter](http://www.gutenberg.org/files/12116/12116-h/12116-h.htm#Shock-headed_Peter)”,
 which goes as follows:
 
-> Just look at him\! there he stands, with his nasty hair and hands.
-> See\! his nails are never cut; they are grimed as black as soot; and
-> the sloven, I declare, never once has combed his hair; anything to me
-> is sweeter than to see Shock-headed Peter.
+> Just look at him! there he stands, with his nasty hair and hands. See!
+> his nails are never cut; they are grimed as black as soot; and the
+> sloven, I declare, never once has combed his hair; anything to me is
+> sweeter than to see Shock-headed Peter.
 
 For the German-language original text, see the online digital library
 [Wikisource](https://de.wikisource.org/wiki/Der_Struwwelpeter/Struwwelpeter).
 
 ## Installation
+
+You can install the released version of unstruwwel from
+[CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("unstruwwel")
+```
 
 To install the development version from
 [GitHub](https://github.com/stefanieschneider/unstruwwel) use:
@@ -70,7 +80,7 @@ unstruwwel(dates, language = "en", scheme = "time-span") %>%
   tibble::as_tibble() %>% dplyr::mutate(id = dplyr::row_number()) %>% 
   tidyr::gather(key = id) %>% tidyr::unnest_wider(value) %>% 
   dplyr::rename_all(dplyr::funs(c("text", "start", "end")))
-#> # A tibble: 9 x 3
+#> # A tibble: 9 × 3
 #>   text              start   end
 #>   <chr>             <dbl> <dbl>
 #> 1 5th century b.c.   -500  -401
@@ -102,7 +112,7 @@ unstruwwel(dates, language = "de", scheme = "time-span") %>%
   tibble::as_tibble() %>% dplyr::mutate(id = dplyr::row_number()) %>% 
   tidyr::gather(key = id) %>% tidyr::unnest_wider(value) %>% 
   dplyr::rename_all(dplyr::funs(c("text", "start", "end")))
-#> # A tibble: 6 x 3
+#> # A tibble: 6 × 3
 #>   text                                              start   end
 #>   <chr>                                             <dbl> <dbl>
 #> 1 letztes Drittel 15. und 1. Hälfte 16. Jahrhundert  1467  1550

@@ -10,7 +10,7 @@ Set a Decade and Get its Time Interval
 Set a Decade and Get its Time Interval
 }
 \details{
-An Object of \code{\link{R6Class}} with methods to set
+An Object of \code{R6Class} with methods to set
 common time periods and specifications for decades.
 }
 \examples{
@@ -67,7 +67,7 @@ begins with the year 1 is used.}
 \if{html}{\out{</div>}}
 }
 \subsection{Returns}{
-Object of \code{\link{R6Class}} with methods to set
+Object of \code{R6Class} with methods to set
 common time periods and specifications for decades.
 }
 }

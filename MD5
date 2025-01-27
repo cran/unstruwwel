@@ -1,6 +1,6 @@
-a81c8cfc57b1b0e0cbb23c019f180f38 *DESCRIPTION
+ca635a6d4afae94f79ff880c28d0276c *DESCRIPTION
 d399c2cda6f8c3a984a577af5ee95251 *NAMESPACE
-3bc31f0311c89390aa71f2773f705442 *NEWS.md
+c6dc99ce7dca88c0419638d994460c3c *NEWS.md
 1908b2b9087bf9a38425f81ae841e11f *R/accessors-century.R
 7f76506d93174be3ced4142a5353c564 *R/accessors-decade.R
 41bc37f073dcd66bbb7d299feb8a1140 *R/accessors-period.R
@@ -32,4 +32,4 @@ e152552648b18bfd4c4795174c4156b0 *tests/testthat/test-decade.R
 c0ae9ebb58b7c55a23200d4bfac5ff3c *tests/testthat/test-guess_midas.R
 1a153e13c573eccd4d9e561ae650447e *tests/testthat/test-period.R
 e5d0cdbc92c3960552a5ea138a6b5d35 *tests/testthat/test-unstruwwel.R
-54a2e1b781948eabacbd5d79498c0967 *tests/testthat/test-year.R
+9f5956b4fe106bc8803ef1ac07eb1808 *tests/testthat/test-year.R
